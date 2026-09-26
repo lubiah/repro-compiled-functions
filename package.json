@@ -1,0 +1,18 @@
+{
+  "name": "mikro-orm-compiled-functions-order-repro",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "compile": "mikro-orm compile --config ./src/orm.config.js",
+    "order-1": "node src/order-1.js",
+    "order-2": "node src/order-2.js",
+    "order-2-eval-free": "node src/order-2-eval-free.js"
+  },
+  "dependencies": {
+    "@mikro-orm/core": "7.2.1",
+    "@mikro-orm/postgresql": "7.2.1"
+  },
+  "devDependencies": {
+    "@mikro-orm/cli": "7.2.1"
+  }
+}
